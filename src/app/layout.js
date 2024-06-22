@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Script from 'next/script'
+import SupabaseProvider from '@/providers/SupabaseProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +13,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <Script src="http://localhost:3000/js/jquery-3.3.1.min.js" />
+          <Script src="http://localhost:3000/js/bootstrap.min.js" />
+          <Script src="http://localhost:3000/js/modernizr.js" />
+          <Script src="http://localhost:3000/js/plugin.js" />
+          <Script src="http://localhost:3000/js/jquery.nice-select.min.js" />
+          <Script src="http://localhost:3000/js/jquery.inview.min.js" />
+          <Script src="http://localhost:3000/js/jquery.magnific-popup.js" />
+          <Script src="http://localhost:3000/js/swiper.min.js" />
+          <Script src="http://localhost:3000/js/comboTreePlugin.js" />
+          <Script src="http://localhost:3000/js/mp3/jquery.jplayer.min.js" />
+          <Script src="http://localhost:3000/js/mp3/jplayer.playlist.js" />
+          <Script src="http://localhost:3000/js/owl.carousel.js" />
+          <Script src="http://localhost:3000/js/mp3/player.js" />
+          <Script src="http://localhost:3000/js/custom.js" />
+        <SupabaseProvider>
+          {children}
+        </SupabaseProvider>
+      </body>
     </html>
   )
 }
