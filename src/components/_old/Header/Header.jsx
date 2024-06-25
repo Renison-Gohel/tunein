@@ -1,8 +1,8 @@
 import Sidebar from "../Sidebar";
-import AuthButtonsServer from '@/components/Header/AuthButtons-Server'
-import Notifications from '@/components/Header/Notifications'
-import Left from '@/components/Header/Left/Left'
-import Search from '@/components/Header/Search/Search'
+import AuthButtonsServer from '@/components/_old/Header/AuthButtons-Server'
+import Notifications from '@/components/_old/Header/Notifications'
+import Left from '@/components/_old/Header/Left/Left'
+import Search from '@/components/_old/Header/Search/Search'
 
 export default function Header() {
     return (
