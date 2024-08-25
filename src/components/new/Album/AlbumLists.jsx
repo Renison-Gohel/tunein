@@ -150,7 +150,7 @@ function AlbumLists({ heading, langData }) {
 
                     ))
                   ) : (
-                    !loading && <p>No songs available for this language.</p>
+                    !loading && <p>No songs available for this language. Select Any language.</p>
                   )}
                   {/* Album List Ends */}
 
